@@ -8,16 +8,15 @@ export const MyCard = ({id, name, tags, description, age, image}) => {
             <div className="galeria">
                 <img src={image}
             alt="" />
-            <h3>{name}</h3>
+            <h4>{name}</h4>
             <p>{description}</p>
-            </div>
-            
-            <div>
+             <div className="button">
                 {tags && tags.length > 0 &&
                     tags.map((tag, index) => (
-                        <Tags key={index} text={tag} color="bg-success" />
+                        <Tags key={index} text={tag} color="primary" />
                     ))
                 }
+            </div>
             </div>
         </div>
         </>
